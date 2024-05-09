@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Automóviles</title>
+</head>
+<body>
+    <h1>Lista de Automóviles</h1>
+    <ul>
+        {% for automovil in automoviles %}
+            <li>{{ automovil.marca }} {{ automovil.model }} - {{ automovil.matricula }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
